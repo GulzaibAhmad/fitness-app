@@ -7,7 +7,7 @@ import Bg from '../../assets/bg.png';
 
 export default function Hero() {
   return (
-    <div className="hero">
+    <div className="hero-container">
         <div className="details">
             <h2>Hi, I'm Dave <span>Marcel</span></h2>
             <p>Personal Fitness Trainer</p>
@@ -17,8 +17,11 @@ export default function Hero() {
             </div>
         </div>
 
-
+        <div className="images">
+          <img src={Main} className='boy' />
+        </div>
 
     </div>
   )
 }
+

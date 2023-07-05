@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './header.css';
 import { Squash as Hamburger } from 'hamburger-react';
 
-import Hero from './Hero';
+import Hero from './Hero.js';
 
 export default function Header() {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -12,6 +12,7 @@ export default function Header() {
   };
 
   return (
+    <header>
     <div className="nav">
       <nav>
         <h1 className="logo">Dave Marcel</h1>
@@ -31,5 +32,6 @@ export default function Header() {
 
       <Hero/>
     </div>
+    </header>
   );
 }

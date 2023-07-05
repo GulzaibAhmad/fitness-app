@@ -1,0 +1,65 @@
+.about__container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 10%;
+}
+
+
+
+.about__me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    place-items: center;
+}
+
+.about__me-image img {
+
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.about__content h3 {
+    color: #fff;
+    padding: 5px 5px 5px 0;
+    margin-bottom: 10px;
+}
+
+.about__content p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    color: orange;
+}
+
+/* =====================MEDIA QUERIES (MEDIUM DEVICES)================================= */
+@media screen and (max-width: 1024px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .about__me {
+        width: 50%;
+        margin: 0.1rem auto 2rem;
+    }
+
+  }
+  
+  /* =====================MEDIA QUERIES (SMALL DEVICES)================================= */
+  @media screen and (max-width: 600px) {
+    .about__me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+    .about__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .about__content {
+        text-align: center;
+    }
+    .about__content p {
+        margin: 1.5rem 0;
+    }
+  }
+  
+  

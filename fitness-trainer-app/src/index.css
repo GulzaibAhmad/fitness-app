@@ -11,6 +11,20 @@
     --transition: all 400ms ease;
 }
 
+section{
+    height: max-content;
+}
+
+section > h2, section > h5 {
+    text-align: center;
+    color: #fff;
+}
+
+section > h2 {
+    color: orange;
+    margin-bottom: 3rem;
+}
+
     /* .btn {
         width: max-content;
         display: inline-block;
