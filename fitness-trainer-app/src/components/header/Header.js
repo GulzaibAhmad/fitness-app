@@ -21,9 +21,9 @@ export default function Header() {
         </div>
         <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#program">Programs</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
