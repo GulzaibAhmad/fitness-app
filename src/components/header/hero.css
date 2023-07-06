@@ -6,12 +6,13 @@
     }
     
     .details {
+      margin-top: 40px;
       margin-left: 2%;
       flex: 0 0 50%; /* Adjust the width as needed */
       padding: 100px; /* Adjust the padding as needed */
     }
     
-    h2 {
+    .details h2 {
       font-size: 50px;
       color: #fff;
       margin-bottom: 20px;
@@ -71,6 +72,7 @@
     }
     @media screen and (max-width: 400px) {
       .details {
+        margin-top: 0;
         flex: 0 0 100%;
         padding: 30px;
         align-items: center;
@@ -103,6 +105,7 @@
       }
     
       .details {
+        margin-top: 0;
         flex: 0 0 100%;
         padding: 50px;
         justify-content: center;
@@ -128,8 +131,13 @@
         gap: 5%;
         margin-top: 0;
       }
+
+      h2 {
+        font-size: 100px;
+      }
     
       .details {
+        margin-top: 0;
         padding: 80px;
       }
     }
