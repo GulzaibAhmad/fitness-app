@@ -3,7 +3,6 @@ import React from 'react'
 import './hero.css'
 
 import Main from '../../assets/main.png';
-import Bg from '../../assets/bg.png';
 
 export default function Hero() {
   return (
@@ -18,7 +17,7 @@ export default function Hero() {
         </div>
 
         <div className="images">
-          <img src={Main} className='boy' />
+          <img src={Main} alt='Main Img' />
         </div>
 
     </div>
