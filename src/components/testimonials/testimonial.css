@@ -1,0 +1,55 @@
+#testimonials {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #testimonials img {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  #testimonials img.active {
+    display: block;
+  }
+  
+  .carousel-dots {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .carousel-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-dot.active {
+    background-color: #555;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 400px) {
+    #testimonials {
+      max-width: 95%;
+    }
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 768px) {
+    #testimonials {
+      max-width: 90%;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    #testimonials {
+      max-width: 80%;
+    }
+  }
+  

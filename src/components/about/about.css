@@ -28,8 +28,8 @@ h2 {
 
 .about__container {
   display: grid;
-  grid-template-columns: 35% 65%;
-  gap: 5rem;
+  grid-template-columns: 35% 60%;
+  gap: 10rem;
 }
 
 .about__me-image img {
@@ -45,7 +45,7 @@ h2 {
 
 .about__content h3 {
   color: orange;
-  padding: 2px 2px 2px 0;
+  padding: 0 2px 2px 0;
 }
 
 .about__content p {

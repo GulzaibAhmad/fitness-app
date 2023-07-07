@@ -11,6 +11,10 @@
     --transition: all 400ms ease;
 }
 
+li {
+    list-style-type: none;
+}
+
 section{
     height: max-content;
 }
