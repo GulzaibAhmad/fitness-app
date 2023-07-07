@@ -11,7 +11,7 @@ export default function Header() {
     setNavOpen(!isNavOpen);
   };
 
-  // Function to close the navigation
+
   const closeNav = () => {
     setNavOpen(false);
   };
