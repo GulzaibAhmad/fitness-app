@@ -54,7 +54,7 @@ export default function Programs() {
               <p>Virtual training serves as an excellent option for individuals who possess a fundamental understanding of and have access to a gym but seek an additional level of responsibility and assistance to stay on track.</p>
             </li>
           </ul>
-        </article>      
+        </article>    
       </div>
     </section>
   );

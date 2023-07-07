@@ -54,7 +54,9 @@ nav ul li a:hover {
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 400px), (min-width: 401px) and (max-width: 768px) {
+@media screen and (max-width: 400px),
+       (min-width: 401px) and (max-width: 768px),
+       (min-width: 769px) and (max-width: 1024px) {
 
   .hamburger-icon {
     display: block;
@@ -91,6 +93,7 @@ nav ul li a:hover {
     margin: 0;
   }
 }
+
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   nav {
