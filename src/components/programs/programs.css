@@ -16,10 +16,16 @@
   .program {
     border: 1px solid #ddd;
     border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: var(--transition);
-    backface-visibility: hidden; /* Added backface-visibility property */
+    backface-visibility: hidden;
   }
+  
   
   .program:hover {
     transform: translateY(-5px) scale(1.05);

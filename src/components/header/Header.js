@@ -29,9 +29,8 @@ export default function Header() {
           </ul>
         </div>
       </nav>
-
-      <Hero/>
     </div>
+    <Hero/>
     </header>
   );
 }
