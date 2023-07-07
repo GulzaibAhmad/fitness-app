@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="nav">
+      <div className="nav-container">
         <nav>
           <h1 className="logo">Dave Marcel</h1>
           <div className="hamburger-icon" onClick={toggleNav}>

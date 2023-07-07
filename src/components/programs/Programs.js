@@ -8,7 +8,7 @@ export default function Programs() {
   return (
     <section id='programs'>
       <h5>What I Offer</h5>
-      <h2>Progrmas</h2>
+      <h2>Programs</h2>
 
       <div className="container Program__container">
         <article className="program">

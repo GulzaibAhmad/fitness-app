@@ -15,9 +15,6 @@ li {
     list-style-type: none;
 }
 
-section{
-    height: max-content;
-}
 
 section > h2, section > h5 {
     text-align: center;
