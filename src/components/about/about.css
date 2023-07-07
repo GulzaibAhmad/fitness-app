@@ -1,97 +1,92 @@
-/* === Global Styles === */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* === About Section Styles === */
 #about {
-  padding: 2rem;
+  padding: 50px 0;
 }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 16px;
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.about__container {
-  display: grid;
-  grid-template-columns: 35% 60%;
-  gap: 10rem;
+.about__me {
+  flex: 0 0 50%;
+}
+
+.about__me-image {
+  text-align: center;
 }
 
 .about__me-image img {
-  width: 100%;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  height: auto;
 }
 
 .about__content {
-  font-size: 1.3rem;
-  line-height: 1.6;
+  flex: 0 0 50%;
+  padding: 0 20px;
 }
 
-.about__content h3 {
+h3 {
+  font-size: 24px;
   color: orange;
-  padding: 0 2px 2px 0;
+  margin-bottom: 15px;
 }
 
-.about__content p {
+p {
+  font-size: 18px;
   color: #fff;
-  padding: 1rem 1rem 1rem 0;
+  line-height: 1.5;
 }
 
-
-/* === Media Queries === */
 @media screen and (max-width: 400px) {
-  h2 {
-    font-size: 1.8rem;
+  .container {
+    flex-direction: column;
   }
 
-  .about__container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .about__me-image img {
-    border-radius: 0.5rem;
+  .about__me {
+    flex: 1 0 auto;
+    margin-bottom: 20px;
   }
 
   .about__content {
-    font-size: 1rem;
+    flex: 1 0 auto;
   }
 }
 
 @media screen and (min-width: 401px) and (max-width: 768px) {
-  h2 {
-    font-size: 2rem;
+  .container {
+    flex-wrap: wrap;
   }
 
-  .about__container {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .about__me-image img {
-    border-radius: 0.8rem;
+  .about__me,
+  .about__content {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .about__container {
-    grid-template-columns: 1fr;
-    gap: 4rem;
+  .container {
+    flex-direction: column;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
   }
 }
