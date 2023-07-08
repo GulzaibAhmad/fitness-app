@@ -2,7 +2,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 5%;
-      margin-top: 5%;
+      margin-top: 10%;
     }
     
     .details {
@@ -72,7 +72,6 @@
     }
     @media screen and (max-width: 400px) {
       .details {
-        margin-top: 5%;
         flex: 0 0 100%;
         padding: 30px;
         align-items: center;
@@ -101,7 +100,6 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
-        margin-top: 5%;
       }
 
       .details h2 {
@@ -133,7 +131,6 @@
         justify-content: center;
         align-items: center;
         gap: 5%;
-        margin-top: 5%;
       }
 
       h2 {
@@ -151,7 +148,6 @@
         justify-content: center;
         align-items: center;
         gap: 5%;
-        margin-top: 5%;
       }
 
       h2 {
