@@ -31,7 +31,7 @@ export default function Contact() {
           />
         </div>
         <div>
-          <label htmlFor="program">Program:</label>
+          <label htmlFor="program">Programs:</label>
           <select
             id="program"
             value={program}
