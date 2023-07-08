@@ -11,6 +11,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .program {
@@ -71,6 +73,8 @@
   @media screen and (max-width: 400px) {
     .Program__container {
       grid-template-columns: 1fr;
+      margin: 0 3px 0 3px;
+      
     }
     
     .program {
@@ -89,6 +93,7 @@
   @media screen and (min-width: 401px) and (max-width: 768px) {
     .Program__container {
       grid-template-columns: 1fr;
+      margin: 0 5px 0 5px;
     }
     
     .program__head h3 {
@@ -100,6 +105,7 @@
     .Program__container {
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1rem;
+      margin: 0 10px 0 10px;
     }
   }
   
