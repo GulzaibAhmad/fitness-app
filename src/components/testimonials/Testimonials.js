@@ -24,7 +24,7 @@ export default function Testimonials() {
 
   return (
     <section id="testimonials">
-      <h5>Review From Clients</h5>
+      <h5>Reviews From Clients</h5>
       <h2>Testimonials</h2>
 
       {testimonials.map((testimonial, index) => (
