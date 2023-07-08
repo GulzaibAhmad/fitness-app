@@ -17,7 +17,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
-      <h2>Contact Form</h2>
+      <h2>Contact Us</h2>
 
       <form onSubmit={handleSubmit}>
         <div>
