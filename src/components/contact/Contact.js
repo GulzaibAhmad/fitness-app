@@ -1,64 +1,51 @@
 import React, { useState } from 'react';
 
-import './contact.css'
+import './contact.css';
 
 export default function Contact() {
-  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [program, setProgram] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add your logic to handle the form submission, such as sending an email or saving the data to a database
-    // Once the submission is successful, you can set the "submitted" state to true
-    setSubmitted(true);
+    alert('Thank you for reaching out! We will get back to you soon.');
+
+    setEmail('');
+    setProgram('');
   };
 
   return (
     <section id="contact">
-      <br />
       <h5>Get In Touch</h5>
       <h2>Contact Form</h2>
 
-      {submitted ? (
+      <form onSubmit={handleSubmit}>
         <div>
-          <p>Thank you for reaching out! We will get back to you soon.</p>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
         </div>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            ></textarea>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      )}
+        <div>
+          <label htmlFor="program">Program:</label>
+          <select
+            id="program"
+            value={program}
+            onChange={(e) => setProgram(e.target.value)}
+            required
+          >
+            <option value="">Select a Program</option>
+            <option value="One-On-One Training">One-On-One Training</option>
+            <option value="Semi-Private Training">Semi-Private Training</option>
+            <option value="Online Training">Online Training</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </section>
   );
 }

@@ -6,7 +6,7 @@ import './programs.css'; // Import the CSS file for styling
 
 const programsData = [
   {
-    title: 'One-on-one Training',
+    title: 'One-On-One Training',
     image: One,
     description: 'Personalized coaching provides individualized instruction on correct lifting techniques, acquaints you with exercises tailored to your specific objectives, and empowers you to unlock your maximum potential.',
   },
