@@ -65,8 +65,27 @@
   .program__list p {
     margin-top: 1rem;
     margin-left: 1rem;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
     color: #fff;
+  }
+
+  .program__list button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: darkorange;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 15px 23px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .program__list button:hover {
+    background-color: orange;
   }
   
   /* === Media Queries === */
@@ -88,6 +107,11 @@
     .program__list p {
       font-size: 1rem;
     }
+
+    .program button {
+      font-size: 1rem;
+      padding: 12px 18px;
+    }
   }
   
   @media screen and (min-width: 401px) and (max-width: 768px) {
@@ -99,6 +123,11 @@
     .program__head h3 {
       font-size: 1.4rem;
     }
+
+    .program button {
+      font-size: 1.1rem;
+      padding: 13px 20px;
+    }
   }
   
   @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -106,6 +135,11 @@
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1rem;
       margin: 0 10px 0 10px;
+    }
+
+    .program button {
+      font-size: 1.2rem;
+      padding: 14px 20px;
     }
   }
   

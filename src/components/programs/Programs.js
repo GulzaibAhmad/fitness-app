@@ -2,7 +2,7 @@ import React from 'react';
 import One from '../../assets/One_on_one.jpg';
 import Semi from '../../assets/Semi_training.jpg';
 import Online from '../../assets/Online_training.jpg';
-import './programs.css'; // Import the CSS file for styling
+import './programs.css';
 
 const programsData = [
   {
@@ -23,6 +23,11 @@ const programsData = [
 ];
 
 export default function Programs() {
+  const handleContactClick = () => {
+    const contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id='programs'>
       <h5>What I Offer</h5>
@@ -41,6 +46,9 @@ export default function Programs() {
               </li>
               <li>
                 <p>{program.description}</p>
+              </li>
+              <li>
+                <button onClick={handleContactClick}>Contact Now</button>
               </li>
             </ul>
           </article>
