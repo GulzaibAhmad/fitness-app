@@ -18,18 +18,13 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8%;
 }
 
 .about__me {
   flex: 0 0 50%;
 }
 
-.about__me-image {
-  text-align: center;
-}
-
-.about__me-image img {
+.about__me img {
   max-width: 100%;
   height: auto;
 }
@@ -58,19 +53,18 @@ p {
   }
 
   .about__me {
-    flex: 1 0 auto;
+    flex: 1;
     margin-bottom: 20px;
   }
 
   .about__content {
-    flex: 1 0 auto;
+    flex: 1;
   }
 }
 
 @media screen and (min-width: 401px) and (max-width: 768px) {
   .container {
-    flex-wrap: wrap;
-    gap: 0;
+    flex-direction: column; 
   }
 
   .about__me,

@@ -142,4 +142,10 @@
       padding: 14px 20px;
     }
   }
+
+  @media screen and (min-width: 1025px) and (max-width: 1220px) {
+    .Program__container {
+      margin: 0 5px;
+    }
+  }
   
